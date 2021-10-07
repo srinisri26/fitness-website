@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+ <!--cdn link-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!--Bootstrap links-->
+      <link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"></script>
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+ 
+      <!--AOS animation link-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <style>
+.navi
+{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.navi ul 
+{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-left: 230px;
+ 
+}
+ .navi ul li a
+{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.navi ul li a:hover
+{
+    color: orangered;
+}
+.slide
+{
+    position: relative;
+}
+.aboutss
+{
+   position: absolute;
+   color: orangered;
+   text-shadow: 2px 2px 2px whitesmoke;
+   font-size: 80px;
+   margin-top: -320px;
+   margin-left: 150px;
+}
+.build
+{
+  
+    position: absolute;
+    color: orangered;
+    text-shadow: 2px 2px 2px whitesmoke;
+   font-size: 45px;
+   margin-top: -200px;
+   margin-left: 145px;  
+}
+.vector
+{
+    background-image: url(video_bg.png);
+    height: 350px;
+    width: 620px;
+    margin-top: 60px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    backface-visibility: hidden;
+}
+.load
+{
+    margin-left: 260px;
+    margin-top: 130px;
+}
+.btn
+{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    margin-top: 65px;
+    padding: 20px 250px 20px 20px;
+    margin-left: 180px;
+    text-align: center;
+    border-style: groove;
+}
+.lorem
+{
+    font-size: 21.5px;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-align: center;
+}
+.sixteen
+{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 40px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(61, 64, 65);
+    font-style: italic;
+}
+.sixteen1
+{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 250px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(61, 64, 65);
+    font-style: italic;
+}
+.space
+{
+    position: absolute;
+    margin-top: 60px;
+    text-align: start;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+.read
+{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.share
+{
+    position: absolute;
+    margin-top: 188px;
+    margin-left: 390px;
+    font-size: 20px;
+}
+.r1
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 460px;
+}
+.r1:hover
+{
+    background-color: orangered;
+}
+.r2
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 510px;
+}
+.r2:hover
+{
+    background-color: orangered;
+}
+.r3
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 560px;
+}
+.r3:hover
+{
+    background-color: orangered;
+}
+.tab1
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 160px;
+    margin-left: 180px;
+    background-color: orangered;
+}
+.tab1 h1
+{
+    position: absolute;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top:5px;
+    color: white;
+    font-weight: bolder;
+}
+.tab2
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 211px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab2 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: #0f0f0f;
+    font-weight: lighter;
+}
+.tab3
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 262px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab3 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: #030303;
+    font-weight: lighter;
+}
+.tab4
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 313px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab4 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab5
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 364px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab5 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab6
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 415px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab6 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab7
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 466px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab7 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab8
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 517px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab8 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab9
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 568px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab9 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab10
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 619px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab10 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.line
+{
+    height: 2px;
+    width: 115%;
+    background-color: #f0f0f0;
+    margin-top: 250px;
+    margin-left: 10px;
+}
+.vector
+{
+    background-image: url(video_bg.png);
+    height: 350px;
+    width: 620px;
+    margin-top: 60px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    backface-visibility: hidden;
+}
+.load
+{
+    margin-left: 260px;
+    margin-top: 130px;
+}
+.btn
+{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    margin-top: 65px;
+    padding: 20px 250px 20px 20px;
+    margin-left: 180px;
+    text-align: center;
+    border-style: groove;
+}
+.lorem
+{
+    font-size: 21.5px;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-align: center;
+}
+.sixteen
+{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 40px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(61, 64, 65);
+    font-style: italic;
+}
+.sixteen1
+{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 250px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(61, 64, 65);
+    font-style: italic;
+}
+.space
+{
+    position: absolute;
+    margin-top: 60px;
+    text-align: start;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+.read
+{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.share
+{
+    position: absolute;
+    margin-top: 188px;
+    margin-left: 390px;
+    font-size: 20px;
+}
+.r1
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 460px;
+}
+.r1:hover
+{
+    background-color: orangered;
+}
+.r2
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 510px;
+}
+.r2:hover
+{
+    background-color: orangered;
+}
+.r3
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 560px;
+}
+.r3:hover
+{
+    background-color: rgb(170, 59, 19);
+}
+.tab11
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 30px;
+    margin-left: 180px;
+    background-color: orangered;
+}
+.tab11 h1
+{
+    position: absolute;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top:5px;
+    color: white;
+    font-weight: bolder;
+}
+.tab21
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 81px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab21 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: #0f0f0f;
+    font-weight: lighter;
+}
+.tab31
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 132px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab31 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: #030303;
+    font-weight: lighter;
+}
+.tab41
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 183px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab41 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab51
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 234px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab51 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.tab61
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: 285px;
+    margin-left: 180px;
+    background-color: #f0f0f0;
+}
+.tab61 h1
+{
+    position: absolute;
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top:8px;
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.vector
+{
+    background-image: url(video_bg.png);
+    height: 350px;
+    width: 620px;
+    margin-top: 60px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    backface-visibility: hidden;
+}
+.load
+{
+    margin-left: 260px;
+    margin-top: 130px;
+}
+.btn
+{
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    margin-top: 65px;
+    padding: 20px 250px 20px 20px;
+    margin-left: 180px;
+    text-align: center;
+    border-style: groove;
+}
+.lorem
+{
+    font-size: 21.5px;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-align: center;
+}
+.sixteen
+{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 40px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(61, 64, 65);
+    font-style: italic;
+}
+.sixteen1
+{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 250px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(61, 64, 65);
+    font-style: italic;
+}
+.space
+{
+    position: absolute;
+    margin-top: 60px;
+    text-align: start;
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+.read
+{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.share
+{
+    position: absolute;
+    margin-top: 188px;
+    margin-left: 390px;
+    font-size: 20px;
+}
+.r1
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 460px;
+}
+.r1:hover
+{
+    background-color: orangered;
+}
+.r2
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 510px;
+}
+.r2:hover
+{
+    background-color: orangered;
+}
+.r3
+{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color:rgb(199, 199, 199);
+    margin-top: 187px;
+    margin-left: 560px;
+}
+.r3:hover
+{
+    background-color: orangered;
+}
+.line2
+{
+    height: 4px;
+    width: 115%;
+    background-color: orangered;
+    margin-top: 250px;
+    margin-left: 10px;
+}
+.tab110
+{
+    position: absolute;
+    height: 50px;
+    width: 345px;
+    color: rgb(187, 112, 0);
+    margin-top: -300px;
+    margin-left: 765px;
+    background-color: orangered;
+}
+.tab110 h1
+{
+    position: absolute;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top:5px;
+    color: white;
+    font-weight: bolder;
+}
+.boo
+{
+    margin-top: 70px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo1
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo2
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo3
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo4
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo5
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo6
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo7
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo8
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo9
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo10
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.boo11
+{
+    margin-top: 5px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: black;
+}
+.footer
+{
+    position: relative;
+    background-image: url(footer_bg.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+}
+.footer ul li
+{
+    display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+.footer ul li a
+{
+    margin-top: 200px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.footer ul li a:hover
+{
+color: tomato;
+}
+.ema
+{
+margin-left: 500px;
+margin-top: 50px;
+color: white;
+font-weight: bolder;
+background-color: transparent;
+border-style: double;
+font-size: 15px;
+padding-left: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 150px;
+text-align: center;
+}
+.boxing
+{
+    margin-left: -50px;
+    margin-top: -5px;
+}
+.follow
+{
+    margin-left: 590px;
+    margin-top: 40px;
+    color: white;
+    font-weight: bolder; 
+    font-size: 20px;
+}
+.right
+{
+    margin-left: 510px;
+    margin-top: 70px;
+    color: white;
+    font-weight: lighter; 
+    font-size: 20px;
+    letter-spacing: 2px;
+}   
+.discount
+{
+    position: relative;
+}
+.summer
+{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -155px;
+    line-height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+</style>
+
+</head>
+<body>
+    <div class="navi" data-aos="fade-right"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="schedule.html">SCHEDULE</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="Blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contactus.html">CONTACT US</a>
+            </li>
+        </ul>
+      </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="slide carousel-item active">
+            <img class="d-block" src="blogbg.jpg" alt="First slide">
+            <h1 class="aboutss"data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="100"
+            data-aos-duration="1000">BLOG</h1>
+            <h3 class="build"data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="100"
+            data-aos-duration="1000">BUILDING A COMMUNITY OF ATHELETIC</h3>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="vector card"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                        <a href="https://youtu.be/dJlFmxiL11s" target="_self"><img class="load" src="play.png" height="80px" width="80px"></a>
+                    </div>
+                    <h4 class="lorem"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing.</h4>
+                    <span class="sixteen"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">16.00 P.M</span>
+                    <span class="sixteen1"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="500">Comments 0</span>
+                    <a class="space"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere a quae explicabo, nemo quo facilis porro excepturi quod aut exercitationem nulla ratione tempore veritatis quas ut maiores adipisci? Eum.</a>
+                    <a href="#"><h4 class="read"> READ MORE</h4></a>
+                    <p class="share"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Share</p>
+                    <a href="#"><div class="r1 rounded-circle"  data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <a href="#"><div class="r2 rounded-circle"  data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <a href="#"><div class="r3 rounded-circle"  data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <div class="line">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-outline-success">Search</button>
+                    <div class="tab1 card">
+                        <h1> CATEGORIES</h1>
+                    </div>
+                    <div class="tab2 card">
+                        <h1>Lorem, ipsum dolor sit..</h1>
+                    </div>
+                    <div class="tab3 card">
+                        <h1>Tur adipiscing elites... </h1>
+                    </div>
+                    <div class="tab4 card">
+                        <h1>Egestas orci, vitae ulla... </h1>
+                    </div>
+                    <div class="tab5 card">
+                        <h1>Consectetur id onec at....</h1>
+                    </div>
+                    <div class="tab6 card">
+                        <h1>Lum rutrum massa quis...</h1>
+                    </div>
+                    <div class="tab7 card">
+                        <h1>Donec et ultricies ipsum... </h1>
+                    </div>
+                    <div class="tab8 card">
+                        <h1>Aliquam non est a  fac... </h1>
+                    </div>
+                    <div class="tab9 card">
+                        <h1>Erisque eu sed lectus...</h1>
+                    </div>
+                    <div class="tab10 card"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                        <h1>Ibus nunc quis ex tr...</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="vector card"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                        <a href="https://youtu.be/dJlFmxiL11s" target="_self"><img class="load" src="play.png" height="80px" width="80px"></a>
+                    </div>
+                    <h4 class="lorem"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing.</h4>
+                    <span class="sixteen"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">16.00 P.M</span>
+                    <span class="sixteen1"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="500">Comments 0</span>
+                    <a class="space"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere a quae explicabo, nemo quo facilis porro excepturi quod aut exercitationem nulla ratione tempore veritatis quas ut maiores adipisci? Eum.</a>
+                    <a href="#"><h4 class="read"> READ MORE</h4></a>
+                    <p class="share"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Share</p>
+                    <a href="#"><div class="r1 rounded-circle"  data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <a href="#"><div class="r2 rounded-circle"  data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <a href="#"><div class="r3 rounded-circle"  data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <div class="line">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="tab11 card">
+                        <h1>RECENT ARTICLES</h1>
+                    </div>
+                    <div class="tab21 card">
+                        <h1>Lorem, ipsum dolor sit..</h1>
+                    </div>
+                    <div class="tab31 card">
+                        <h1>Tur adipiscing elites... </h1>
+                    </div>
+                    <div class="tab41 card">
+                        <h1>Egestas orci, vitae ulla... </h1>
+                    </div>
+                    <div class="tab51 card">
+                        <h1>Consectetur id onec at....</h1>
+                    </div>
+                    <div class="tab61 card">
+                        <h1>Lum rutrum massa quis...</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="vector card"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                        <a href="https://youtu.be/dJlFmxiL11s" target="_self"><img class="load" src="play.png" height="80px" width="80px"></a>
+                    </div>
+                    <h4 class="lorem"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Lorem ipsum dolor sit amet, consectetur adipiscing.</h4>
+                    <span class="sixteen"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">16.00 P.M</span>
+                    <span class="sixteen1"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="500">Comments 0</span>
+                    <a class="space"  data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere a quae explicabo, nemo quo facilis porro excepturi quod aut exercitationem nulla ratione tempore veritatis quas ut maiores adipisci? Eum.</a>
+                    <a href="#"><h4 class="read"> READ MORE</h4></a>
+                    <p class="share"  data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1000">Share</p>
+                    <a href="#"><div class="r1 rounded-circle"  data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <a href="#"><div class="r2 rounded-circle"  data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <a href="#"><div class="r3 rounded-circle"  data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-easing="ease-in-sine"data-aos-duration="1000"></div></a>
+                    <div class="line">
+                    </div>
+                </div>
+                <div class="tab110 card">
+                    <h1>POPULAR TAGS</h1>
+                    <button class="boo">Yoga Center</button><br>
+                    <button class="boo1">Trainning</button><br>
+                    <button class="boo2">Fat Loss</button><br>
+                    <button class="boo3">Weight Gain</button><br>
+                    <button class="boo4">Fitness</button><br>
+                    <button class="boo5">Running</button><br>
+                    <button class="boo6">Gym</button><br>
+                    <button class="boo7">Cardio</button><br>
+                    <button class="boo8">Stretching</button><br>
+                    <button class="boo9">Workout</button><br>
+                    <button class="boo10">Bodybuilding</button><br>
+                    <button class="boo11">Biscep</button><br>
+                </div>
+            </div>
+        </div>
+                <div class="footer">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="courses.html">COURSES</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="schedule.html">SCHEDULED</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Blog.html">BLOG</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="Contactus.html">CONTACT US</a>
+                          </li>
+                      </ul>
+                      <form>
+                          <input class="ema" type="email" name="mail" required placeholder="ENTER YOUR EMAIL" >
+                          <a href="#"><img class="boxing"src="email_bg.png" height="30px"width="30px"></a>
+                      </form>
+                      <h3 class="follow">FOLLOW US ON</h3>
+                      <h4 class="right">© 2018. ALL RIGHTS RESERVED</h4>
+                </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+</html>

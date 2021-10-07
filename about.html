@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus Page</title>
+
+     <!--cdn link-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!--Bootstrap links-->
+     <link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+     <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"></script>
+     <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+     <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+     <!--AOS animation link-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <style>
+.navi
+{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.navi ul 
+{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-left: 230px;
+}
+ .navi ul li a
+{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.navi ul li a:hover
+{
+    color: orangered;
+}
+.slide
+{
+    position: relative;
+}
+.aboutss
+{
+   color: orangered;
+   text-shadow: 1px 1px 1px whitesmoke;
+   position: absolute;
+   font-size: 80px;
+   margin-top: -320px;
+   margin-left: 150px;
+}
+.build
+{
+    position: absolute;
+    color: orangered;
+    text-shadow: 2px 2px 2px whitesmoke;
+   font-size: 45px;
+   margin-top: -200px;
+   margin-left: 145px;  
+}
+.section
+{
+    background-image: url(about_inner.png);
+    height: 740px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+}
+.aboutus
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+.aboutus h1
+{
+    color:black;
+    position: absolute;
+    margin-left:50px;
+    margin-top: 30px;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aboutus h4
+{
+    color:black;
+    position: absolute;
+    margin-left:50px;
+    margin-top: 160px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family:sans-serif;
+    letter-spacing: 4px;
+}
+.aboutus p
+{
+    color:black;
+    position: absolute;
+    margin-left:30px;
+    margin-top: 250px;
+    font-size: 20px;
+    font-weight:lighter;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+}
+.btn
+{
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-left: 180px;
+   margin-top: 600px;
+   border-radius: 80px;
+  font-size: 25px;
+}
+.content
+{
+    background-image: url(achivments.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content h1
+{
+    color: white;
+    font-size: 50px;
+    padding-top: 80px;
+    margin-left: 80px;
+}
+.days
+{
+    margin-left: 250px;
+    padding-top: 50px;
+}
+.content h3
+{
+    font-size: 25px;
+    margin-left: 200px;
+    padding-top: 20px;
+    color: white;
+}
+.days1
+{
+    margin-left: 250px;
+    padding-top: 50px;
+}
+.content h4
+{
+    margin-left: 180px;
+    padding-top: 20px;
+    color: white;
+}
+.days2
+{
+    margin-left: 550px;
+    margin-top: -560px;
+}
+.coffee
+{
+    padding-left: 340px;
+    margin-top: -258px;
+    color: white;
+}
+.days3  
+{
+    margin-left: 550px;
+    margin-top: 55px;
+}
+.client
+{
+    padding-left: 310px;
+    margin-top: -2px;
+}
+.testimonial
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    margin-left:70px;
+    margin-top: 30px;
+}
+.testimonial h1
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 110px;
+    color: black;
+    font-weight: bolder;
+}
+.testimonial h3
+{
+    color:black;
+    position: absolute;
+    margin-left:45px;
+    margin-top: 170px;
+    font-size: 40px;
+    font-weight: lighter ;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+}
+.box
+{
+    position: relative;
+    height: 240px;
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    border-style:groove;
+    border-color: white;
+}
+.box h5
+{
+ position: absolute;
+ text-align: center;
+ font-size: 18px;
+ margin-top: 30px;
+ padding-left: 25px;
+ padding-right: 25px;
+ font-family: sans-serif;
+ line-height: 30px;
+}
+.box1
+{
+    margin-left: 200px;
+    position: relative;
+    height: 240px;
+    width: 550px;
+    background-color: rgb(255, 255, 255);
+    border-style:groove;
+    border-color: white;
+}
+.box1 h5
+{
+position: absolute;
+text-align: center;
+ font-size: 18px;
+ margin-top: 30px;
+ padding-left: 25px;
+ padding-right: 25px;
+ font-family: sans-serif;
+ line-height: 30px;
+}
+.girl
+{
+    margin-left: 190px;
+    margin-top: -60px;
+    border-style:groove;
+    border-color: coral;
+    background-position: center;
+    background-size: cover;
+}
+.testimonial1
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    margin-left:700px;
+    margin-top: 30px;
+}
+.testimonial1 h1
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 110px;
+    color: black;
+    font-weight: bolder;
+}
+.testimonial1 h3
+{
+    color:black;
+    position: absolute;
+    margin-left:45px;
+    margin-top: 190px;
+    font-size: 40px;
+    font-weight: lighter ;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+}
+.rect
+{
+    margin-top: 80px;
+    position:relative;
+    background-image: url(t1.png);
+    height: 550px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.rect h1
+{
+    text-align: center;
+    margin-top: 580px;
+    font-weight: bolder;
+    color:orangered;
+    margin-left: -20px;
+}
+.rect p
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: -40px;
+}
+.rect1
+{
+    margin-top: 80px;
+    margin-left: 22px;
+    position:relative;
+    background-image: url(t2.png);
+    height: 550px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.rect1 h1
+{
+    text-align: center;
+    margin-top: 580px;
+    font-weight: bolder;
+    color:orangered;
+}
+.rect1 p
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: -20px;
+}
+.rect2
+{
+    margin-top: 80px;
+    margin-left: 30px;
+    position:relative;
+    background-image: url(t3.png);
+    height: 550px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.rect2 h1
+{
+    text-align: center;
+    margin-top: 580px;
+    font-weight: bolder;
+    color:orangered;
+    margin-left: -20px;
+}
+.rect2 p
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: -40px;
+}
+.footer
+{
+    position: relative;
+    background-image: url(footer_bg.png);
+    height: 100vh;
+    width: 100%;
+    margin-top: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.footer ul li
+{
+    display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+.footer ul li a
+{
+    margin-top: 200px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.footer ul li a:hover
+{
+color: tomato;
+}
+.ema
+{
+margin-left: 500px;
+margin-top: 50px;
+color: white;
+font-weight: bolder;
+background-color: transparent;
+border-style: double;
+font-size: 15px;
+padding-left: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 150px;
+text-align: center;
+}
+.boxing
+{
+    margin-left: -50px;
+    margin-top: -5px;
+}
+.follow
+{
+    margin-left: 590px;
+    margin-top: 40px;
+    color: white;
+    font-weight: bolder; 
+    font-size: 20px;
+}
+.right
+{
+    margin-left: 510px;
+    margin-top: 70px;
+    color: white;
+    font-weight: lighter; 
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+    <div class="navi" data-aos="fade-right"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="schedule.html">SCHEDULE</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="Blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contactus.html">CONTACT US</a>
+            </li>
+        </ul>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="slide carousel-item active">
+            <img class="d-block" src="about_bg.jpg" alt="First slide">
+            <h1 class="aboutss"data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="10"
+            data-aos-duration="1000">ABOUT US</h1>
+            <h3 class="build"data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="10"
+            data-aos-duration="1000">BUILDING A COMMUNITY OF ATHELETIC</h3>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-6 col-md-4 col-sm-5 mt-5">
+                  <div class="section">
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-sm-5 mt-5"data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"data-aos-duration="1200">
+                  <div class="aboutus"data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"data-aos-duration="1200">
+                    <h1>ABOUTUS</h1>
+                    <h4>BESTGYM</h4>
+                    <p data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"data-aos-duration="1200">Loremipsumdolorsitamet,consectetuadipiscingelit.<br>Vestibulumporttitoregestasorci,vitaeullamcorperst risus consectetur id. Donec at velit vestibulum, as and rutrum massa quis, porttitor lorem. Donec et ultricies arcu. In odio augue, hendrerit nec nisl ac, rhoncus gravida mauris.
+                      <br><br>
+                      Loremipsumdolorsitamet,consectetuadipiscingelit.<br>Vestibulumporttitoregestasorci,vitaeullamcorperst risus consectetur id.vestibulum,Donec at velit vestibulum.
+                  </p>
+                  <a href="Contactus.html"><button type="button" class="btn btn-outline-info pt-3 pl-4 pr-4 pb-3 text-center">CONTACT US</button></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="content mt-4">
+          <h1 data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1300">WHY CHOOSE US ......</h1>
+          <img class="days" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500"src="customers.png">
+          <h3 data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500">DAYS WORKED</h3>
+          <img class="days1"data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500"src="equipments.png">
+          <h4 data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500">PROJECT FINISHED</h4>
+          <img class="days2"data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500"src="coffee.png">
+          <h4 class="coffee"data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500">COFFEE CUP</h4>
+          <img class="days3"data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500"src="experience.png">
+          <h4 class="client" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1500">CLIENT SATISFIED</h4>
+      </div>
+      <div class="testimonial mt-5">
+          <h1 data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1200">TESTIMONIAL</h1>
+          <h3 data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1200">WHATCLIENT'SSAYS</h3>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-6 col-md-4 col-sm-5 mt-5">
+                  <div class="box mt-5"  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="10"
+                  data-aos-duration="1000">
+                    <img src="testimonials_img.png" height="130px"width="130px" alt="..." class="girl rounded-circle">
+                    <h5  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000"> Praesent aliquet diam et arcu laoreet pellentesque. Integer non euismod eros, vel ornare lorem. Morbi imperdiet tellus sed nulla tempus finibus. Donec sodales ante et nulla egestas, in rutrum arcu viverra.</h5>
+                  </div>
+              </div>
+              <div class="col-6 col-md-4 col-sm-5 mt-5">
+                <div class="box1  mt-5"  data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="10"
+                data-aos-duration="1000">
+                    <img src="testimonials_img.png" height="130px"width="130px" alt="..." class="girl rounded-circle">
+                  <h5  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="10"
+                  data-aos-duration="1000"> Praesent aliquet diam et arcu laoreet pellentesque. Integer non euismod eros, vel ornare lorem. Morbi imperdiet tellus sed nulla tempus finibus. Donec sodales ante et nulla egestas, in rutrum arcu viverra.</h5>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="testimonial1 mt-5">
+        <h1 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"data-aos-duration="1200">TRAINERS</h1>
+        <h3 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"data-aos-duration="1200">FORATHELETICWOMEN</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="rect card">
+                    <h1  data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000">RACHEL ADAM</h1>
+                    <p  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000">GYM TRAINER</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rect1 card">
+                    <h1  data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000">KEAF SHEN</h1>
+                    <p  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000">GYM TRAINER</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rect2 card">
+                    <h1  data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000">LEFEW D.LOEE</h1>
+                    <p  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="10"
+                    data-aos-duration="1000">GYM TRAINER</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">SCHEDULE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contactus.html">CONTACT US</a>
+              </li>
+          </ul>
+          <form>
+              <input class="ema" type="email" name="mail" required placeholder="ENTER YOUR EMAIL" >
+              <a href="#"><img class="boxing"src="email_bg.png" height="30px"width="30px"></a>
+          </form>
+          <h3 class="follow">FOLLOW US ON</h3>
+          <h4 class="right">© 2018. ALL RIGHTS RESERVED</h4>
+    </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+</html>

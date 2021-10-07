@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+      <!--cdn link-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+      <!--Bootstrap links-->
+      <link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"></script>
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+ 
+       <!--AOS animation link-->
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <style>
+.navi
+{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.navi ul 
+{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-left: 230px;
+ 
+}
+ .navi ul li a
+{
+    font-weight: bold;
+   color: rgb(255, 252, 251);
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.navi ul li a:hover
+{
+    color: orangered;
+}
+.slide
+{
+    position: relative;
+}
+.aboutss
+{
+    color: orangered;
+   position: absolute;
+   font-size: 80px;
+   margin-top: -320px;
+   margin-left: 150px;
+   text-shadow: 2px 2px 2px whitesmoke;
+}
+.build
+{
+  
+    position: absolute;
+    color: orangered;
+    text-shadow: 2px 2px 2px whitesmoke;
+   font-size: 45px;
+   margin-top: -200px;
+   margin-left: 145px;  
+}
+.get
+{
+    position: relative;
+}
+.get h3
+{
+    position: absolute;
+    margin-left: 540px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.line
+{
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 95px;
+}
+.touch
+{
+    color: orangered;
+}
+.qq
+{
+    position: absolute;
+    margin-left: 368px;
+    margin-top: 125px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.square
+{
+    margin-top: 300px;
+    height: 250px ;
+    width: 350px;
+}
+.location
+{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 30px;
+    border-radius: 70px;
+}
+.num
+{
+    position: absolute;
+    margin-top: 268px;
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.location1
+{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 50px;
+    border-radius: 70px;
+}
+.num1
+{
+    position: absolute;
+    margin-top: 268px;
+    margin-left: 160px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.location2
+{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 40px;
+    border-radius: 70px;
+}
+.num2
+{
+    position: absolute;
+    margin-top: 268px;
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.testimonial h1
+{
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 30px;
+    font-size: 95px;
+    color: black;
+    font-weight: bolder;
+}
+.testimonial h3
+{
+    color:black;
+    position: absolute;
+    margin-left:45px;
+    margin-top: 520px;
+    font-size: 40px;
+    font-weight: lighter ;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+}
+.your
+{
+    position: absolute;
+    margin-left:100px;
+    margin-top: 620px;
+    font-size: 25px;
+    padding-left: 50px;
+    border-radius: 50px;
+}
+.your:hover
+{
+    border-color: orangered;
+}
+.your1
+{
+    position: absolute;
+    margin-left:515px;
+    margin-top: 620px;
+    font-size: 25px;
+    padding-left: 50px;
+    border-radius: 50px;
+}
+.your1:hover
+{
+    border-color: orangered;
+}
+.your2
+{
+    position: absolute;
+    margin-left:900px;
+    margin-top: 620px;
+    font-size: 25px;
+    padding-left: 50px;
+    border-radius: 50px;
+}
+.your2:hover
+{
+    border-color: orangered;
+}
+.your3
+{
+    position: absolute;
+    margin-left:100px;
+    margin-top: 720px;
+    font-size: 25px;
+    padding-left:850px;
+    border-radius: 50px;
+    padding-top: 100px;
+}
+.your3:hover
+{
+    border-color: orangered;
+}
+.bud
+{
+    position: absolute;
+    margin-left:600px;
+    margin-top: 920px;
+    font-size: 27px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:transparent;
+}
+.bud:hover
+{
+    border-color: orangered;
+}
+.footer
+{
+    position: relative;
+    background-image: url(footer_bg.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1050px;
+}
+.footer ul li
+{
+    display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+.footer ul li a
+{
+    margin-top: 200px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.footer ul li a:hover
+{
+color: tomato;
+}
+.ema
+{
+margin-left: 500px;
+margin-top: 50px;
+color: white;
+font-weight: bolder;
+background-color: transparent;
+border-style: double;
+font-size: 15px;
+padding-left: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 150px;
+text-align: center;
+}
+.boxing
+{
+    margin-left: -50px;
+    margin-top: -5px;
+}
+.follow
+{
+    margin-left: 590px;
+    margin-top: 40px;
+    color: white;
+    font-weight: bolder; 
+    font-size: 20px;
+}
+.right
+{
+    margin-left: 510px;
+    margin-top: 70px;
+    color: white;
+    font-weight: lighter; 
+    font-size: 20px;
+    letter-spacing: 2px;
+}   
+.discount
+{
+    position: relative;
+}
+.summer
+{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -155px;
+    line-height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+</style>
+</head>
+<body>
+    <div class="navi" data-aos="fade-right"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="schedule.html">SCHEDULE</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="Blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contactus.html">CONTACT US</a>
+            </li>
+        </ul>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="slide carousel-item active">
+            <img class="d-block" src="blog_cover.png" alt="First slide">
+            <h1 class="aboutss"data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="10"
+            data-aos-duration="1000">CONTACTUS</h1>
+            <h3 class="build"data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="10"
+            data-aos-duration="1000">BUILDING A COMMUNITY OF ATHELETIC WOMEN</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="get">
+          <h3>GET IN <span class="touch">TOUCH</span></h3>
+          <img class="line"src="trainers-line-img.png" height="5px" width="200px">
+          <p class="qq">Quisque ullamcorper ex non leo blandit porta. Duis purus sapien, <br>blandit non sem quis,
+            mollis vehicula sapien.</p>
+      </div>
+      </div>
+      <div class="container">
+      <div class="row">
+          <div class="col">
+              <img class="location" src="location.png" alt="..." class="rounded-circle" height="100px"width="100px">
+              <p class="num"> 13005 Greenville AvenuCalifonia,TX70240</p>
+          </div>
+          <div class="col">
+            <img class="location1" src="phone.png" alt="..." class="rounded-circle" height="100px"width="100px">
+            <p class="num1"> +1 800125 6524<br>Finance@domain.com</p>
+        </div>
+        <div class="col">
+            <img class="location2" src="time.png" alt="..." class="rounded-circle" height="100px"width="100px">
+            <p class="num2"> 10:00am to 6:00pm<br>Sunday Closed</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="testimonial mt-5 ml-5">
+        <h1 data-aos-duration="1200">CONTATCT FORM</h1>
+        <h3>FILL THE BELOW FORM</h3>
+    </div>
+    <form>
+        <input class="your"type="text" name="name" placeholder="Your Name">
+        <input  class="your1"  name="name" placeholder="Phone Number">
+        <input  class="your2"type="text" name="name" placeholder="E-mail">
+        <input  class="your3"type="text" name="name" placeholder="Enter Your Message">
+    </form>
+    <div>
+        <button class="bud"type="button">Submit</button></div>
+        <div class="footer">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="courses.html">COURSES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">SCHEDULED</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">BLOG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contactus.html">CONTACT US</a>
+                  </li>
+              </ul>
+              <form>
+                  <input class="ema" type="email" name="mail" required placeholder="ENTER YOUR EMAIL" >
+                  <a href="#"><img class="boxing"src="email_bg.png" height="30px"width="30px"></a>
+              </form>
+              <h3 class="follow">FOLLOW US ON</h3>
+              <h4 class="right">© 2018. ALL RIGHTS RESERVED</h4>
+        </div>
+
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

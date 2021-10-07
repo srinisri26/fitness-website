@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+
+    <!--cdn link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <!--Bootstrap links-->
+      <link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/jquery-slim.min.js"></script>
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+      <script src="file:///C:/Users/admin/Desktop/Bootstrap/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <!--carousel links-->
+		
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Project/gym%20images/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Project/gym%20images/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="file:///C:/Users/admin/Desktop/Project/gym%20images/css/style.css">
+
+     <!--AOS animation link-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <style>
+      
+    .navi
+{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+   
+}
+.navi ul 
+{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-left: 230px;
+}
+ .navi ul li a
+{
+    font-weight: bold;
+    color:rgb(29, 29, 29);
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px whitesmoke;
+}
+.navi ul li a:hover
+{
+  color: orangered;
+}
+.shape 
+{
+   position: relative; 
+   color: orangered;
+   text-shadow: 2px 2px 2px whitesmoke;
+   top: -615px;
+   left: 300px;
+   font-size: 60px;
+   font-weight: bold;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.shapes
+{
+  position: relative; 
+   color: orangered;
+   text-shadow: 2px 2px 2px whitesmoke;
+   top: -615px;
+   left: 200px;
+   font-size: 60px;
+   font-weight: bold;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.double
+{
+  position: relative;
+  top: -430px;
+  left: 350px;
+}
+.tit
+{
+  position: relative;
+  top: -800px;
+  left: 350px;
+}
+.btn
+{
+  position: relative;
+  top: -530px;
+  border-radius: 80px;
+  left: -110px;
+  border-style: groove;
+  border-collapse: separate;
+}
+.about
+{
+  position: relative;
+    background-image: url(abt1.png);
+    height: 750px;
+    width: 250px;
+    top: -250px;
+}
+.about1
+{
+    position: absolute;
+    left: 0px;
+    background-image: url(abt2.png);
+    height: 760px;
+    width: 250px;
+    top: -200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboutus
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    left: 0px;
+    top: -200px;
+}
+.aboutus h1
+{
+    position: absolute;
+    color:black;
+    left:30px;
+    top: 30px;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aboutus h4
+{
+    position: absolute;
+    color:black;
+    left:30px;
+    top: 160px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family:sans-serif;
+    letter-spacing: 4px;
+}
+.aboutus p
+{
+    position: absolute;
+    color:black;
+    left:30px;
+    top: 250px;
+    font-size: 20px;
+    font-weight:lighter;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+}
+.bg
+{
+    background-image: url(bg2.jpg);
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    top: -130px;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+}
+.cont1
+{
+  position: relative;
+  top: -110px;
+  background-image: url(course_bg.png);
+  height: 200vh;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.our
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    top: 30px;
+    left: 50px;
+}
+.our h1
+{
+    position: absolute;
+    color:rgb(255, 255, 255);
+    top: 30px;
+    left: 50px;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.our h4
+{
+    position: absolute;
+    color:rgb(255, 255, 255);
+     top: 180px;
+    left: 60px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family:sans-serif;
+    letter-spacing: 4px;
+}
+.box
+       {
+        position: relative;
+         opacity: 0.8;
+        height: 250px;
+        width: 350px;
+        background-image: url(c1.jpg);
+        background-position: center;
+        background-size: cover;
+        left: 10px;
+        top: 110px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+     }
+     .boom h1
+{
+            position: absolute;
+            left: 60px;
+            padding-top: 280px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(255, 255, 255);
+}
+.box1
+     {
+    position: relative;
+    height: 250px;
+    opacity: 0.8;
+    width: 350px;
+    background-image: url(c2.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 10px;
+    top: 110px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;  
+     }
+     .boom1 h1
+{
+            position: absolute;
+            left: 70px;
+            padding-top:280px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(252, 252, 252);
+}
+.box2
+     {
+    position: relative;
+    opacity: 0.8;
+    height: 250px;
+    width: 350px;
+    background-image: url(c3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    margin-top:110px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;  
+     }
+     .boom2 h1
+{
+            position: absolute;
+            left: 60px;
+            padding-top: 280px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(252, 252, 252);
+}
+.box3
+     {
+    position: relative;
+    opacity: 0.8;
+    height: 250px;
+    width: 350px;
+    background-image: url(c4.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 20px;
+    top: 130px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;  
+     }
+     .boom3 h1
+{
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            padding-top:180px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(252, 252, 252);
+}
+.box4
+     {
+       position: relative;
+       opacity: 0.8;
+    height: 250px;
+    width: 350px;
+    background-image: url(c5.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 20px;
+    top: 130px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;  
+     }
+     .boom4 h1
+{
+            position: absolute;
+            padding-top:280px;
+            left: 80px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(252, 252, 252);
+}
+.box5
+     {
+       position: relative;
+       opacity: 0.8;
+    height: 250px;
+    width: 350px;
+    background-image: url(c6.jpg);
+    background-position: center;
+    background-size: cover;
+    left: 20px;
+    top: 130px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;  
+     }
+     .boom5 h1
+{
+            position: absolute;
+            padding-top:280px;
+            margin-left: 80px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            color: rgb(252, 252, 252);
+}
+.schedule
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.cube
+{
+  height: 50px;
+  width: 60px;
+ background-color:black;
+ margin-top: 30px;
+ margin-right: 10px;
+}
+.cube1
+{
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+  height: 100px;
+  width: 50px;
+  margin-right: 20px;
+}
+.bud
+{
+  display: block;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  text-align: center;
+  height: 50px;
+  width: 150px;
+  margin-right: 20px;
+}
+.bud h1
+{
+  font-size: 25px;
+}
+.timetable
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    margin-left:50px;
+    margin-top: 20px;
+}
+.timetable h1
+{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 110px;
+    color: black;
+    font-weight: bolder;
+}
+.timetable h3
+{
+    color:black;
+    position: absolute;
+    margin-left:45px;
+    margin-top: 150px;
+    font-size: 25px;
+    font-weight: lighter ;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+}
+.schedule
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.cube1
+{
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 18px;
+  height: 140px;
+  width: 58px;
+  margin-right: 20px;
+}
+.cube1 h3
+{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.square
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 88px;
+
+}
+.square img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.square h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.square1
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 258px;
+
+}
+.square1 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.square1 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 50px;
+ font-weight: bolder;
+}
+.square2
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 428px;
+
+}
+.square2 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.square2 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.square3
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 598px;
+
+}
+.square3 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.square3 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.square4
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 770px;
+
+}
+.square4 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.square4 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.square5
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 940px;
+
+}
+.square5 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.square5 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.schedule1
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.cube2
+{
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 18px;
+  height: 140px;
+  width: 58px;
+  margin-right: 20px;
+}
+.cube2 h3
+{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.squares
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 88px;
+
+}
+.squares img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squares h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 17px;
+ font-weight: bolder;
+}
+.squares1
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 258px;
+
+}
+.squares1 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squares1 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.squares2
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 428px;
+
+}
+.squares2 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squares2 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.squares3
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 598px;
+
+}
+.squares3 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squares3 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.squares4
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 770px;
+
+}
+.squares4 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squares4 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 30px;
+ font-weight: bolder;
+}
+.squares5
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 940px;
+
+}
+.squares5 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squares5 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.schedule3
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.cube3
+{
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 18px;
+  height: 140px;
+  width: 58px;
+  margin-right: 20px;
+}
+.cube3 h3
+{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.squaress
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 88px;
+
+}
+.squaress img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.squaress1
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 258px;
+
+}
+.squaress1 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress1 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.squaress2
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 428px;
+
+}
+.squaress2 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress2 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.squaress3
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 598px;
+
+}
+.squaress3 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress3 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.squaress4
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 770px;
+
+}
+.squaress4 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress4 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.squaress5
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 940px;
+
+}
+.squaress5 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress5 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.schedule4
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.cube4
+{
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 18px;
+  height: 140px;
+  width: 58px;
+  margin-right: 20px;
+}
+.cube4 h3
+{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.squaress0
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 88px;
+
+}
+.squaress0 img
+{
+  position: absolute;
+  height:78px;
+  width: 65px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress0 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 25px;
+ font-weight: bolder;
+}
+.squaress11
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 258px;
+
+}
+.squaress11 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress11 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 20px;
+ font-weight: bolder;
+}
+.squaress22
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 428px;
+
+}
+.squaress22 img
+{
+  position: absolute;
+  height:78px;
+  width: 65px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress22 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left:25px;
+ font-weight: bolder;
+}
+.squaress33
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 598px;
+
+}
+.squaress33 img
+{
+  position: absolute;
+  height:78px;
+  width: 65px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress33 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left:25px;
+ font-weight: bolder;
+}
+.squaress44
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 770px;
+
+}
+.squaress44 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress44 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 38px;
+ font-weight: bolder;
+}
+.squaress55
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 940px;
+
+}
+.squaress55 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress55 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 15px;
+ font-weight: bolder;
+}
+.schedule5
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+.cube5
+{
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-left: 18px;
+  height: 140px;
+  width: 58px;
+  margin-right: 20px;
+}
+.cube5 h3
+{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+}
+.squaress00
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 88px;
+
+}
+.squaress00 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress00 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 45px;
+ font-weight: bolder;
+}
+.squaress111
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 258px;
+
+}
+.squaress111 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress111 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 20px;
+ font-weight: bolder;
+}
+.squaress222
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 428px;
+
+}
+.squaress222 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress222 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left:25px;
+ font-weight: bolder;
+}
+.squaress333
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 598px;
+
+}
+.squaress333 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress333 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left:45px;
+ font-weight: bolder;
+}
+.squaress444
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 770px;
+
+}
+.squaress444 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress444 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 45px;
+ font-weight: bolder;
+}
+.squaress555
+{
+  position: relative;;
+  margin-top: -140px;
+  height: 140px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin-left: 940px;
+
+}
+.squaress555 img
+{
+  position: absolute;
+  height:80px;
+  width: 80px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.squaress555 h5
+{
+  position: absolute;
+ color: black;
+ text-align: center;
+ font-size: 19px;
+ margin-top: 90px;
+ padding-top: 18px;
+ padding-left: 45px;
+ font-weight: bolder;
+}
+.footer
+{
+    position: relative;
+    background-image: url(footer_bg.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.footer ul li
+{
+    display: flex;
+   justify-content: space-between;
+   text-align: center;
+}
+.footer ul li a
+{
+    margin-top: 200px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.footer ul li a:hover
+{
+color: tomato;
+}
+.ema
+{
+margin-left: 500px;
+margin-top: 50px;
+color: white;
+font-weight: bolder;
+background-color: transparent;
+border-style: double;
+font-size: 15px;
+padding-left: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 150px;
+text-align: center;
+}
+.boxing
+{
+    margin-left: -50px;
+    margin-top: -5px;
+}
+.follow
+{
+    margin-left: 590px;
+    margin-top: 40px;
+    color: white;
+    font-weight: bolder; 
+    font-size: 20px;
+}
+.right
+{
+    margin-left: 510px;
+    margin-top: 70px;
+    color: white;
+    font-weight: lighter; 
+    font-size: 20px;
+    letter-spacing: 2px;
+}   
+.discount
+{
+    position: relative;
+}
+.summer
+{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -155px;
+    line-height: 50px;
+    color: white;
+    font-weight: bolder;
+}
+.testimonial1
+{
+    position: relative;
+    background-image: url(title-bg.png);
+    height: 205px;
+    width: 170px;
+    margin-left:700px;
+    top: -190px;
+}
+.testimonial1 h1
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 110px;
+    color: black;
+    font-weight: bolder;
+}
+.testimonial1 h3
+{
+    color:black;
+    position: absolute;
+    margin-left:45px;
+    margin-top: 190px;
+    font-size: 40px;
+    font-weight: lighter ;
+    font-family:sans-serif;
+    letter-spacing: 3px;
+}
+.rect
+{
+    top: -100px;
+    position:relative;
+    background-image: url(t1.png);
+    height: 550px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.rect h1
+{
+    text-align: center;
+    margin-top: 580px;
+    font-weight: bolder;
+    color:orangered;
+    margin-left: -20px;
+}
+.rect p
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: -40px;
+}
+.rect1
+{
+    top: -100px;
+    margin-left: 22px;
+    position:relative;
+    background-image: url(t2.png);
+    height: 550px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.rect1 h1
+{
+    text-align: center;
+    margin-top: 580px;
+    font-weight: bolder;
+    color:orangered;
+}
+.rect1 p
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: -20px;
+}
+.rect2
+{
+    top: -100px;
+    margin-left: 30px;
+    position:relative;
+    background-image: url(t3.png);
+    height: 550px;
+    width: 350px;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+.rect2 h1
+{
+    text-align: center;
+    margin-top: 580px;
+    font-weight: bolder;
+    color:orangered;
+    margin-left: -20px;
+}
+.rect2 p
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin-left: -40px;
+}
+</style>
+</head>
+<body>
+    <div class="navi" data-aos="fade-right"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="schedule.html">SCHEDULE</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="Blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contactus.html">CONTACT US</a>
+            </li>
+        </ul>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="bg3.jpg" alt="First slide">
+          <img class="double" data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000"src="title-bg.png"height="90px"width="720px"> 
+          <h3 class="shape" data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">SHAPE YOUR  PERFECT BODY</h3>
+          <img class="tit" data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000"src="title-bg.png"height="90px"width="720px">
+          <button type="button" class="btn btn-outline-info mt-3 pt-3 pl-4 pr-4 pb-3 text-center"  data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">Read More</button>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="b1.jpg" height="855vh"alt="Second slide">
+          <img class="double" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1100"src="title-bg.png"height="90px"width="720px"> 
+          <h3 class="shape" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1200">GYM FIT FOR ATHELETIC MEN</h3>
+          <img class="tit" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1100"src="title-bg.png"height="90px"width="720px">
+          <button type="button" class="btn btn-outline-info mt-3 pt-3 pl-4 pr-4 pb-3 text-center"  data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1100">Read More</button>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="bg2.jpg"  height="855vh" alt="Third slide">
+          <img class="double" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1100"src="title-bg.png"height="90px"width="720px"> 
+          <h3 class="shapes" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1200">GYM FIT FOR ATHELETIC WOMEN</h3>
+          <img class="tit" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1100"src="title-bg.png"height="90px"width="720px">
+          <button type="button" class="btn btn-outline-info mt-3 pt-3 pl-4 pr-4 pb-3 text-center"  data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1100">Read More</button>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-5"data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine"data-aos-duration="1200">
+                 <div class="about card">
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-6 col-12mt-5"data-aos="fade-left"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine"data-aos-duration="1200">
+                <div class="about1 card mt-4">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-5"data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"data-aos-duration="1200">
+                <div class="aboutus"data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"data-aos-duration="1200">
+                  <h1>ABOUT&nbsp;US</h1>
+                  <h4>BEST&nbsp;GYM</h4>
+                  <p data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"data-aos-duration="1200">Loremipsumdolorsitamet,consectetuadipiscingelit.<br>Vestibulumporttitoregestasorci,vitaeullamcorperst risus consectetur id. Donec at velit vestibulum, as and rutrum massa quis, porttitor lorem. Donec et ultricies arcu. In odio augue, hendrerit nec nisl ac, rhoncus gravida mauris.
+                    <br><br>
+                    Loremipsumdolorsitamet,consectetuadipiscingelit.<br>Vestibulumporttitoregestasorci,vitaeullamcorperst risus consectetur id.vestibulum,Donec at velit vestibulum, as and rutrum massa quis, porttitor lorem. Donec et ultricies arcu. In odio augue.
+                </p>
+                </div>
+            </div>
+         </div>
+     </div>
+         <div class="col-lg-12 col-md-12 col-sm-12 bg">
+         </div>
+       <div class="cont1">
+        <div class="our"data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"data-aos-duration="1200">
+          <h1>OUR&nbsp;COURSES</h1>
+          <h4 data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"data-aos-duration="1200">WE&nbsp;AIM&nbsp;TO&nbsp;TRANSFORM&nbsp;YOUR&nbsp;ABILITIES</h4>
+        </div>
+        <div class="container">
+          <div class="row"  data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="300"
+          data-aos-duration="1000">
+              <div class="col-md-4 col-sm-6" data-aos="fade-right"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="300"
+              data-aos-duration="1000">
+                <div class="box">
+                  <div class="boom">
+                    <h1>KETTLE BELL</h1>
+                </div>
+               </div>
+             </div>
+             <div class="col-md-4 col-sm-6" data-aos="zoom-in-up"
+             data-aos-anchor="#example-anchor"
+             data-aos-offset="300"
+             data-aos-duration="1000">
+                <div class="box1"  data-aos="zoom-in-up"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="300"
+                data-aos-duration="1000">
+                  <div class="boom1">
+                  <h1>CONJUGATE</h1>
+                </div>
+               </div>
+             </div>
+             <div class="col-md-4 col-sm-6" data-aos="fade-left"
+             data-aos-anchor="#example-anchor"
+             data-aos-offset="300"
+             data-aos-duration="1000">
+                <div class="box2"  data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="300"
+                data-aos-duration="1000">
+                  <div class="boom2">
+                    <h1>KETTLE BELL</h1>
+                </div>
+               </div>
+             </div>
+             <div class="row">
+                <div class="col-md-4 col-sm-6" data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="300"
+                data-aos-duration="1000">
+                  <div class="box3" class="col-4" data-aos="fade-right"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="300"
+                  data-aos-duration="1000">
+                    <div class="boom3">
+                    <h1>CONJUGATE</h1>
+                  </div>
+                 </div>
+               </div>
+               <div class="col-md-4 col-sm-6" data-aos="zoom-in-up"
+               data-aos-anchor="#example-anchor"
+               data-aos-offset="300"
+               data-aos-duration="1000">
+                  <div class="box4"  data-aos="zoom-in-up"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="300"
+                  data-aos-duration="1000">
+                    <div class="boom4">
+                      <h1> GYMNASTIC</h1>
+                    </div>
+                 </div>
+               </div>
+               <div class="col-md-4 col-sm-6"  data-aos="fade-left"
+               data-aos-anchor="#example-anchor"
+               data-aos-offset="300"
+               data-aos-duration="1000">
+                  <div class="box5"  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="300"
+                  data-aos-duration="1000">
+                    <div class="boom5">
+                      <h1>STRIKING</h1>
+                    </div>
+                 </div>
+               </div>
+             </div>
+        </div>
+       </div>
+      </div>
+      <!--trainers-->
+      <div class="testimonial1 mt-5">
+        <h1 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"data-aos-duration="1200">TRAINERS</h1>
+        <h3 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"data-aos-duration="1200">FOR&nbsp;ATHELETIC&nbsp;WOMEN</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="rect card" data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                    <h1  data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="100"
+                    data-aos-duration="1000">RACHEL ADAM</h1>
+                    <p  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="100"
+                    data-aos-duration="1000">GYM TRAINER</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rect1 card" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                    <h1  data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="100"
+                    data-aos-duration="1000">KEAF SHEN</h1>
+                    <p  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="100"
+                    data-aos-duration="1000">GYM TRAINER</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="rect2 card" data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                    <h1  data-aos="fade-right"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="100"
+                    data-aos-duration="1000">LEFEW D.LOEE</h1>
+                    <p  data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="100"
+                    data-aos-duration="1000">GYM TRAINER</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timetable mt-5">
+      <h1 data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"data-aos-duration="1200">TIMETABLE</h1>
+      <h3 data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"data-aos-duration="1200">LOREM&nbsp;IPSUM&nbsp;DOLORS&nbsp;ITAMET</h3>
+  </div>
+  <div class="schedule container">
+    <div class="row">
+      <div class="col"></div>
+    <div class="cube"  data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+    </div>
+    <div class="bud"  data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+      <h1>SUNDAY</h1>
+    </div>
+    <div class="bud"  data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+      <h1>MONDAY</h1>
+    </div>
+    <div class="bud"  data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+      <h1>TUESDAY</h1>
+    </div>
+    <div class="bud"  data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+      <h1>WEDNSDAY</h1>
+    </div>
+    <div class="bud"  data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+      <h1>THURSDAY</h1>
+    </div>
+    <div class="bud"  data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine"data-aos-duration="1000">
+      <h1>FRIDAY</h1>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="schedule1 container">
+    <div class="row">
+      <div class="col">
+        <div class="cube1" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <h3>8.00 A.M</h3>
+        </div>
+        <div class="square"  data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+        <img src="tt1.png">
+        <h5>INTERMEDIATE</h5>
+        </div>
+        <div class="square1"  data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <img src="tt2.png">
+          <h5>TRX</h5>
+          </div>
+          <div class="square2"  data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">
+            <img src="tt3.png">
+            <h5>SPINNING</h5>
+            </div>
+            <div class="square3"  data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"data-aos-duration="1000">
+              <img src="tt3.png">
+              <h5>SPINNING</h5>
+              </div>
+              <div class="square4"  data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                <img src="tt3.png">
+                <h5>SPINNING</h5>
+                </div>
+                <div class="square5"  data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                  <img src="tt1.png">
+                  <h5>INTERMEDIATE</h5>
+                  </div>
+      </div>
+    </div>
+  </div>
+  <div class="schedule2 container">
+    <div class="row">
+      <div class="col">
+        <div class="cube2"  data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <h3>9.00 A.M</h3>
+        </div>
+        <div class="squares"  data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+        <img src="tt1.png">
+        <h5>BEGGINERS</h5>
+        </div>
+        <div class="squares1"  data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <img src="tt2.png">
+          <h5>BEGGINERS</h5>
+          </div>
+          <div class="squares2"  data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">
+            <img src="tt3.png">
+            <h5>BEGGINERS</h5>
+            </div>
+            <div class="squares3"  data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"data-aos-duration="1000">
+              <img src="tt3.png">
+              <h5>BEGGINERS</h5>
+              </div>
+              <div class="squares4"  data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                <img src="tt3.png">
+                <h5>BEGGINERS</h5>
+                </div>
+                <div class="squares5"  data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                  <img src="tt1.png">
+                  <h5>INTERMEDIATE</h5>
+                  </div>
+      </div>
+    </div>
+  </div>
+  <div class="schedule3 container">
+    <div class="row">
+      <div class="col">
+        <div class="cube3"  data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <h3>10.00 A.M</h3>
+        </div>
+        <div class="squaress"  data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+        <img src="tt1.png">
+        <h5>INTERMEDIATE</h5>
+        </div>
+        <div class="squaress1"  data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <img src="tt1.png">
+          <h5>INTERMEDIATE</h5>
+          </div>
+          <div class="squaress2"  data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">
+            <img src="tt1.png">
+            <h5>INTERMEDIATE</h5>
+            </div>
+            <div class="squaress3" data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"data-aos-duration="1000">
+              <img src="tt1.png">
+              <h5>INTERMEDIATE</h5>
+              </div>
+              <div class="squaress4" data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                <img src="tt1.png">
+                <h5>INTERMEDIATE</h5>
+                </div>
+                <div class="squaress5" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                  <img src="tt1.png">
+                  <h5>INTERMEDIATE</h5>
+                  </div>
+      </div>
+    </div>
+  </div>
+  <div class="schedule4 container">
+    <div class="row">
+      <div class="col">
+        <div class="cube4" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <h3>11.00 A.M</h3>
+        </div>
+        <div class="squaress0" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+        <img src="tt5.png">
+        <h5>BOOTCAMP</h5>
+        </div>
+        <div class="squaress11" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <img src="tt1.png">
+          <h5>INTERMEDIATE</h5>
+          </div>
+          <div class="squaress22" data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">
+            <img src="tt5.png">
+            <h5>BOOTCAMP</h5>
+            </div>
+            <div class="squaress33" data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"data-aos-duration="1000">
+              <img src="tt5.png">
+              <h5>BOOTCAMP</h5>
+              </div>
+              <div class="squaress44" data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                <img src="tt7.png">
+                <h5>CORE</h5>
+                </div>
+                <div class="squaress55" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                  <img src="tt3.png">
+                  <h5>BEGGINNER</h5>
+                  </div>
+      </div>
+    </div>
+  </div>
+  <div class="schedule5 container">
+    <div class="row">
+      <div class="col">
+        <div class="cube5" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <h3>11.30 A.M</h3>
+        </div>
+        <div class="squaress00" data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+        <img src="tt2.png">
+        <h5>TRX</h5>
+        </div>
+        <div class="squaress111" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"data-aos-duration="1000">
+          <img src="tt1.png">
+          <h5>INTERMEDIATE</h5>
+          </div>
+          <div class="squaress222" data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"data-aos-duration="1000">
+            <img src="tt3.png">
+            <h5>SPINNING</h5>
+            </div>
+            <div class="squaress333" data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"data-aos-duration="1000">
+              <img src="tt2.png">
+              <h5>TRX</h5>
+              </div>
+              <div class="squaress444" data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                <img src="tt2.png">
+                <h5>TRX</h5>
+                </div>
+                <div class="squaress555" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"data-aos-duration="1000">
+                  <img src="tt7.png">
+                  <h5>CORE</h5>
+                  </div>
+      </div>
+    </div>
+  </div>
+    <div class="discount  mt-5">
+      <img src="discount_bg.jpg" height="200vh" width="100%">
+      <h2 class="summer container">Fitness Classes This Summer.
+          <br>
+          Pay Now & GET 35% Discount</h2>
+  </div>
+  <div class="footer">
+      <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">SCHEDULED</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="Blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactus.html">CONTACT US</a>
+            </li>
+        </ul>
+        <form>
+            <input class="ema" type="email" name="mail" required placeholder="ENTER YOUR EMAIL" >
+            <a href="#"><img class="boxing"src="email_bg.png" height="30px"width="30px"></a>
+        </form>
+        <h3 class="follow">FOLLOW US ON</h3>
+        <h4 class="right">© 2018. ALL RIGHTS RESERVED</h4>
+  </div>
+<script src="file:///C:/Users/admin/Desktop/Project/gym%20images/js/jquery.min.js"></script>
+<script src="file:///C:/Users/admin/Desktop/Project/gym%20images/js/popper.js"></script>
+<script src="file:///C:/Users/admin/Desktop/Project/gym%20images/js/bootstrap.min.js"></script>
+<script src="file:///C:/Users/admin/Desktop/Project/gym%20images/js/owl.carousel.min.js"></script>
+<script src="file:///C:/Users/admin/Desktop/Project/gym%20images/js/main.js"></script>
+
+      <!--AOS animation link-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
